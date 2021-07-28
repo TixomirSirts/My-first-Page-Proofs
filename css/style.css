@@ -237,7 +237,7 @@ progress {
     height: 100%;
     background-color: rgba(52, 84, 122);
     opacity: 0;
-    background-image: url(../img/Play.png);
+    background-image: url('../img/Play.png');
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -278,7 +278,7 @@ section.projects-section {
     height: 100%;
     background-color: rgba(52, 84, 122);
     opacity: 0;
-    background-image: url(../img/look.png);
+    background-image: url('../img/look.png');
     background-size: 100px;
     background-repeat: no-repeat;
     background-position: 50% 50%;
