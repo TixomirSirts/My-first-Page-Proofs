@@ -30,12 +30,13 @@ header,
 
 .fixed-container {
     margin: 0 auto;
-    max-width: 1110px;
+    max-width: 1155px;
     padding: 0 20px;
+    background-color: lightblue;
 }
 
 h1 {
-    margin-bottom: 60px;
+    margin-bottom: 50px;
     font-size: 48px;
     line-height: 45px;
 }
@@ -71,7 +72,7 @@ li {
 /* header-menu */
 
 .menu-container {
-    padding-top: 46px;
+    padding-top: 45px;
     display: flex;
     justify-content: space-between;
 }
@@ -104,7 +105,7 @@ nav ul li {
     font-size: 16px;
     line-height: 26px;
     letter-spacing: 0.1em;
-    padding-left: 42px;
+    padding-left: 40px;
 }
 
 nav ul li a {color: black;}
@@ -119,16 +120,18 @@ nav ul li a:hover,
 .intro-container {
     display: flex;
     justify-content: space-between;
-    padding-top: 128px;
-    padding-bottom: 157px;
+    padding-top: 136px;
+    padding-bottom: 160px;
 }
 
 .intro-image {
-    margin: auto auto;
+    margin-left: 90px;
+    margin-top: 20px;
 }
 
 .intro-image img {
-    width: 357px;
+    max-width: 357px;
+    min-width: 60px;
 }
 
 button {
@@ -158,6 +161,7 @@ input.submit:hover {
 
 .aboutme-section {
     margin-top: 12px;
+    margin-bottom: -10px;
 }
 
 /* numbers */
@@ -173,6 +177,10 @@ input.submit:hover {
     margin: 0 auto;
 }
 
+.numbers-container ul li {
+    margin: 0 10px;
+}
+
 ul.numbers-list li:hover,
 ul.clients-list li:hover,
 ul.social-list li:hover {
@@ -182,19 +190,38 @@ ul.social-list li:hover {
 
 /* skills */
 
+.skills-section .fixed-container {
+    max-width: 1210px;
+}
+
 .skills-container {
     display: flex;
     justify-content: space-between;
 }
 
+.skills-progress {
+    margin-left: 20px;
+}
+
 .skills-title {
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin-top: 110px;
+    margin-bottom: 40px;
     font-size: 32px;
 }
 
 .skills-img {
-    width: 555px;
+    max-width: 555px;
+    min-width: 92.5px;
+    max-height: 450px;
+    min-height: 75px;
+    overflow: hidden;
+}
+
+.skills-img img{
+    max-width: 555px;
+    min-width: 92.5px;
+    max-height: 450px;
+    min-height: 75px;
 }
 
 .skills-item {
@@ -205,24 +232,35 @@ ul.social-list li:hover {
 
 progress {
     height: 8px;
-    width: 445px;
+    width: 23vw;
+    min-width: 75px;
+    max-width: 445px;
 }
 
 /* video */
 
+.video-section .fixed-container {
+    max-width: 1130px;
+    margin-top: 10px;
+}
+
+.video-textblock h2 {
+    margin-bottom: 45px;
+}
+
 video {
-    width: 1110px;
-    height: 600px;
+    max-width: 1110px;
+    max-height: 600px;
 }
 
 .video-wrapper {
-    padding-top: 57px;
+    padding-top: 50px;
 }
 
 /* projects */
 
 .projects-section {
-    padding-top: 28px;
+    padding-top: 25px;
 }
 
 /* .projects-container {
@@ -239,6 +277,7 @@ video {
 .image-wrapper {
     width: 480px;
     height: 480px;
+    overflow: hidden;
     position: relative;
     background-color: rgba(52, 84, 122, 0.0);
     transition: background-color 0.3s;
@@ -275,14 +314,21 @@ video {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
-    max-width: 1920px;
     padding-top: 72px;
+}
+
+.clients-list li {
+    margin: 0 14px;
 }
 
 /* form */
 
+.form-container {
+    padding-left: 10px;
+}
+
 form {
-    margin: 65px auto 0;
+    margin: 55px auto 0;
     max-width: 540px;
     align-items: center;
 
@@ -290,7 +336,7 @@ form {
 
 .form-text-input {
     display: grid;
-    grid-template-columns: repeat(2, minmax(50px, 250px));
+    grid-template-columns: repeat(2, minmax(50px, 255px));
     column-gap: 30px;
     row-gap: 20px;
     grid-auto-rows: 50px 175px;
@@ -337,6 +383,10 @@ footer {
     background: #34547A;
 }
 
+footer .fixed-container {
+    padding-right: 0;
+}
+
 .footer-container,
 .social-list {
     display: flex;
@@ -345,11 +395,11 @@ footer {
 
 .author-container {
     padding: 50px 0;
+    margin-left: 10px;
 }
 
 h3.author-name {
     margin-bottom: 20px;
-
     font-size: 21px;
     line-height: 19px;
     color: #FFFFFF;
@@ -367,5 +417,5 @@ p.copyright {
 }
 
 footer ul li {
-    padding-left: 0.9em;
+    padding-left: 20px;
 }
