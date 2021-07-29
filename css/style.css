@@ -231,7 +231,7 @@ video {
 
 .projects-first-line,
 .projects-second-line {
-    display: inline-flex;
+    display: flex;
     margin: 0 auto;
     max-width: 1920px;
 }
