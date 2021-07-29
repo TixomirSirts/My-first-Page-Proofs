@@ -64,31 +64,6 @@ p.section-text {
 }
 
 
-button {
-    margin-top: 60px;
-    padding: 25px 0px;
-
-    border: none;
-    /* max-width: 225px; */
-    cursor: pointer;
-}
-
-button a {
-    padding: 25px 40px;
-    background-color: #34547A;
-    color: white;
-    font-family: 'Roboto Regular', Arial, Helvetica, sans-serif, Times, serif;
-    font-size: 16px;
-    line-height: 15px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-}
-
-button a:hover,
-input.submit:hover {
-    background-color: #34547Add;
-}
-
 li {
     list-style-type: none;
 }
@@ -132,6 +107,8 @@ nav ul li {
     padding-left: 42px;
 }
 
+nav ul li a {color: black;}
+
 nav ul li a:hover,
 .logo a:hover {
     color: orangered;
@@ -152,6 +129,29 @@ nav ul li a:hover,
 
 .intro-image img {
     width: 357px;
+}
+
+button {
+    margin-top: 60px;
+    padding: 25px 0px;
+    border: none;
+    cursor: pointer;
+}
+
+button a {
+    padding: 25px 40px;
+    background-color: #34547A;
+    color: white;
+    font-family: 'Roboto Regular', Arial, Helvetica, sans-serif, Times, serif;
+    font-size: 16px;
+    line-height: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+button a:hover,
+input.submit:hover {
+    background-color: #34547Add;
 }
 
 /* aboutme */
@@ -221,16 +221,19 @@ video {
 
 /* projects */
 
-section.projects-section {
+.projects-section {
     padding-top: 28px;
 }
+
+/* .projects-container {
+
+} */
 
 .projects-first-line,
 .projects-second-line {
     display: inline-flex;
     margin: 0 auto;
-    /* max-width: 1920px; */
-
+    max-width: 1920px;
 }
 
 .image-wrapper {
