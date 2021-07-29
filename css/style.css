@@ -210,42 +210,13 @@ progress {
 
 /* video */
 
-.video-wrapper {
-    padding-top: 57px;
+video {
     width: 1110px;
     height: 600px;
-    position: relative;
-    background-color: rgba(52, 84, 122, 0.0);
-    transition: background-color 0.3s;
-    cursor: pointer;
 }
 
-.video-wrapper img {
-    display: block;
-    margin: 0 auto;
-    width: inherit;
-    height: inherit;
-    position: absolute;
-
-    position: absolute;
-}
-
-.video-wrapper::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(52, 84, 122);
-    opacity: 0;
-    background-image: url('../img/Play.png');
-    background-size: 100px;
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    transition: opacity 0.3s;
-}
-
-.video-wrapper:hover::after {
-    opacity: 0.8;
+.video-wrapper {
+    padding-top: 57px;
 }
 
 /* projects */
@@ -256,9 +227,9 @@ section.projects-section {
 
 .projects-first-line,
 .projects-second-line {
-    display: flex;
+    display: inline-flex;
     margin: 0 auto;
-    max-width: 1920px;
+    /* max-width: 1920px; */
 
 }
 
