@@ -247,19 +247,37 @@ progress {
     margin-bottom: 45px;
 }
 
-video {
+.video-wrapper {
+    margin: 50px auto 0;
+    width: 118.5vmin;
+    /* width: 58vw; */
+    height: 68.5vmin;
     max-width: 1110px;
     max-height: 600px;
+    min-width: 185px;
+    min-height: 100px;
+    position: relative;
 }
 
-.video-wrapper {
-    padding-top: 50px;
+video {
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 1110px;
+    max-height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);   
+    object-fit: cover;
 }
+
 
 /* projects */
 
 .projects-section {
-    padding-top: 25px;
+    padding-top: 28px;
 }
 
 /* .projects-container {
@@ -316,9 +334,11 @@ video {
     padding-top: 72px;
 }
 
-.clients-list li {
+.clients-item {
     margin: 0 14px;
 }
+
+
 
 /* form */
 
