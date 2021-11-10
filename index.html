@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-7</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -14,17 +15,22 @@
         <div class="fixed-container">
             <div class="menu-container">
                 <div class="logo">
-                    <a href="#">WD</a>
+                    <a href="#main-page"><img src="./img/logo.png" alt="Logo"></a>
                 </div>
                 <nav class="header-menu">
                     <ul class="menu">
-                        <li class="menu-item"><a href="#">главная</a></li>
-                        <li class="menu-item"><a href="#">об авторе</a></li>
-                        <li class="menu-item"><a href="#">работы</a></li>
-                        <li class="menu-item"><a href="#">процесс</a></li>
-                        <li class="menu-item"><a href="#">контакты</a></li>
+                        <li class="menu-item"><a href="#main-page">главная</a></li>
+                        <li class="menu-item"><a href="#about-me">об авторе</a></li>
+                        <li class="menu-item"><a href="#portfolio">работы</a></li>
+                        <li class="menu-item"><a href="#process">процесс</a></li>
+                        <li class="menu-item"><a href="#contacts">контакты</a></li>
                     </ul>
                 </nav>
+                <a href="#popup" class="burger-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </div>
             <div class="intro-container">
                 <div class="intro-image">
@@ -46,7 +52,7 @@
 
     <main>
 
-        <section class="aboutme-section section">
+        <section class="aboutme-section section" id="about-me">
             <div class="fixed-container">
                 <div class="aboutme-container">
                     <h2 class="aboutme-title">Обо мне</h2>
@@ -60,7 +66,17 @@
 
         <section class="numbers-section">
             <div class="fixed-container">
-                <div class="numbers-container">
+                <div class="swiper swiperOfNumbers">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"> <img src="img/numbers-item.png" alt="numbers"> </div>
+                        <div class="swiper-slide"> <img src="img/numbers-item.png" alt="numbers"> </div>
+                        <div class="swiper-slide"> <img src="img/numbers-item.png" alt="numbers"> </div>
+                        <div class="swiper-slide"> <img src="img/numbers-item.png" alt="numbers"> </div>
+                        <div class="swiper-slide"> <img src="img/numbers-item.png" alt="numbers"> </div>
+                        <div class="swiper-slide"> <img src="img/numbers-item.png" alt="numbers"> </div>
+                    </div>
+                </div>
+                <!-- <div class="numbers-container">
                     <ul class="numbers-list">
                         <li class="numbers-item"><img src="img/numbers-item.png" alt="numbers"></li>
                         <li class="numbers-item"><img src="img/numbers-item.png" alt="numbers"></li>
@@ -69,11 +85,8 @@
                         <li class="numbers-item"><img src="img/numbers-item.png" alt="numbers"></li>
                         <li class="numbers-item"><img src="img/numbers-item.png" alt="numbers"></li>
                     </ul>
-                </div>
-
+                </div> -->
             </div>
-
-
         </section>
 
         <section class="skills-section">
@@ -103,7 +116,7 @@
             </div>
         </section>
 
-        <section class="video-section section">
+        <section class="video-section section" id="process">
             <div class="fixed-container">
                 <div class="video-textblock">
                     <h2 class="video-title">Как я работаю</h2>
@@ -118,8 +131,22 @@
             </div>
         </section>
 
-        <section class="projects-section section">
+        <section class="projects-section section" id="portfolio">
             <div class="projects-container">
+                <!-- SLIDER.JS -->
+                <!-- <div class="swiper gridSwiper__projects">
+                    <div class="swiper-wrapper">                         
+                        <div class="swiper-slide"> <img src="img/proj-2.jpg" alt="proj-2"> </div>
+                        <div class="swiper-slide"> <img src="img/proj-1.jpg" alt="proj-1"> </div>
+                        <div class="swiper-slide"> <img src="img/proj-2.jpg" alt="proj-2"> </div>
+                        <div class="swiper-slide"> <img src="img/proj-1.jpg" alt="proj-1"> </div>
+                        <div class="swiper-slide"> <img src="img/proj-1.jpg" alt="proj-1"> </div>
+                        <div class="swiper-slide"> <img src="img/proj-2.jpg" alt="proj-2"> </div>
+                        <div class="swiper-slide"> <img src="img/proj-1.jpg" alt="proj-1"> </div>
+                        <div class="swiper-slide"> <img src="img/proj-2.jpg" alt="proj-2"> </div>
+                    </div>
+                </div> -->
+
                 <div class="projects-first-line">
                     <div class="image-wrapper">
                         <img src="img/proj-2.jpg" alt="proj-2">
@@ -148,11 +175,23 @@
                         <img src="img/proj-2.jpg" alt="proj-2">
                     </div>
                 </div>
-
             </div>
             <div class="fixed-container">
                 <div class="clients-container">
-                    <ul class="clients-list">
+                    <div class="swiper swiperOfClients">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                                        src="img/client.png" alt="client-logo" class="client-logo"></a></div>
+                            <div class="swiper-slide"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                                        src="img/client.png" alt="client-logo" class="client-logo"></a></div>
+                            <div class="swiper-slide"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                                        src="img/client.png" alt="client-logo" class="client-logo"></a></div>
+                            <div class="swiper-slide"><a href="#" target="_blank" rel="noopener noreferrer"><img
+                                        src="img/client.png" alt="client-logo" class="client-logo"></a></div>
+                        </div>
+                    </div>
+
+                    <!-- <ul class="clients-list">
                         <li class="clients-item"> <a href="#" target="_blank" rel="noopener noreferrer"><img
                                     src="img/client.png" alt="client-logo"></a></li>
                         <li class="clients-item"> <a href="#" target="_blank" rel="noopener noreferrer"><img
@@ -161,7 +200,7 @@
                                     src="img/client.png" alt="client-logo"></a></li>
                         <li class="clients-item"> <a href="#" target="_blank" rel="noopener noreferrer"><img
                                     src="img/client.png" alt="client-logo"></a></li>
-                    </ul>
+                    </ul> -->
                 </div>
 
             </div>
@@ -194,7 +233,7 @@
 
     <footer class="footer">
         <div class="fixed-container">
-            <div class="footer-container">
+            <div class="footer-container" id="contacts">
                 <div class="author-container">
                     <h3 class="author-name">TixomirSirts</h3>
                     <p class="copyright">&copy; 2021. Все права защищены</p>
@@ -212,7 +251,24 @@
             </div>
         </div>
     </footer>
-
+    <div class="mobile-container" id="popup">
+        <a href="#header" class="popup__area"></a>
+        <div class="header-mobile">
+            <a href="" class="close-icon">
+                <span></span>
+                <span></span>
+            </a>
+            <ul class="mobile-list">
+                <li class="mobile-list-item"><a href="#main-page">главная</a></li>
+                <li class="mobile-list-item"><a href="#about-me">об авторе</a></li>
+                <li class="mobile-list-item"><a href="#portfolio">работы</a></li>
+                <li class="mobile-list-item"><a href="#process">процессы</a></li>
+                <li class="mobile-list-item"><a href="#contacts">контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
